@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: mrkrishna-gateway
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    disk:
+      name: mrkrishna-gateway-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: DB_PATH
+        value: /var/data/db.sqlite
+      - key: UPI_ID
+        sync: false
+      - key: UPI_PAYEE_NAME
+        value: MrKrishna Gateway
+      - key: GATEWAY_API_KEY
+        sync: false

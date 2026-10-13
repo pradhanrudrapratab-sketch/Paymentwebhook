@@ -1,0 +1,1 @@
+{"name":"mrkrishna-gateway","version":"1.0.0","main":"server.js","scripts":{"start":"node server.js"},"engines":{"node":">=20"},"dependencies":{"better-sqlite3":"^11.8.1","express":"^4.21.2","node-cron":"^3.0.3","qrcode":"^1.5.4"}}
